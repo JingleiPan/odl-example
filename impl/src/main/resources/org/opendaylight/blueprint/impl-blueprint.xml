@@ -26,6 +26,6 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
     </bean>
 
     <!--此处必须为routed-rpc, global-rpc会出现没有注册RPC的问题No implementation of RPC AbsoluteSchemaPath-->
-    <odl:routed-rpc-implementation ref="provider" id="helloRpcImpl"/>
+    <!--<odl:routed-rpc-implementation ref="provider" id="helloRpcImpl"/>-->
 
 </blueprint>

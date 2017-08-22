@@ -25,7 +25,7 @@ public class HelloServiceImpl implements HelloWorldService{
     @Override
     public Future<RpcResult<HelloOutput>> hello(HelloInput input) {
         HelloOutputBuilder helloBuilder = new HelloOutputBuilder();
-        helloBuilder.setGreeting("Hello , " + input.getName());
+        helloBuilder.setGreeting("Hello , " + input.getName() +"by activator.");
         return RpcResultBuilder.success(helloBuilder.build()).buildFuture();
     }
 }

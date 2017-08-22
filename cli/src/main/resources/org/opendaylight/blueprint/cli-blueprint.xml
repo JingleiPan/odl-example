@@ -15,15 +15,15 @@ and is available at http://www.eclipse.org/legal/epl-v10.html
     interface="org.opendaylight.controller.md.sal.binding.api.DataBroker"
     odl:type="default" />
 
-  <bean id="cliCommandsImpl" class="com.company.example.cli.impl.Hello-worldCliCommandsImpl">
+  <bean id="cliCommandsImpl" class="com.company.example.cli.impl.HelloWorldCliCommandsImpl">
     <argument ref="dataBroker" />
   </bean>
   <service ref="cliCommandsImpl" odl:type="default"
-    interface="com.company.example.cli.api.Hello-worldCliCommands" />
+    interface="com.company.example.cli.api.HelloWorldCliCommands" />
 
     <command-bundle xmlns="http://karaf.apache.org/xmlns/shell/v1.0.0">
         <command name="test-command">
-            <action class="com.company.example.cli.commands.Hello-worldCliTestCommand">
+            <action class="com.company.example.cli.commands.HelloWorldCliTestCommand">
                 <argument ref="cliCommandsImpl"/>
             </action>
         </command>
