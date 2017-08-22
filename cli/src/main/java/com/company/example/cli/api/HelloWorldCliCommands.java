@@ -7,7 +7,7 @@
  */
 package com.company.example.cli.api;
 
-public interface Hello-worldCliCommands {
+public interface HelloWorldCliCommands {
 
     /**
      * Define the Karaf command method signatures and the Javadoc for each.

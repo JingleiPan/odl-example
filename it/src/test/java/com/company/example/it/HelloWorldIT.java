@@ -26,8 +26,8 @@ import org.slf4j.LoggerFactory;
 
 @RunWith(PaxExam.class)
 @ExamReactorStrategy(PerClass.class)
-public class Hello-worldIT extends AbstractMdsalTestBase {
-    private static final Logger LOG = LoggerFactory.getLogger(Hello-worldIT.class);
+public class HelloWorldIT extends AbstractMdsalTestBase {
+    private static final Logger LOG = LoggerFactory.getLogger(HelloWorldIT.class);
 
     @Override
     public MavenUrlReference getFeatureRepo() {
@@ -47,14 +47,14 @@ public class Hello-worldIT extends AbstractMdsalTestBase {
     @Override
     public Option getLoggingOption() {
         Option option = editConfigurationFilePut(ORG_OPS4J_PAX_LOGGING_CFG,
-                logConfiguration(Hello-worldIT.class),
+                logConfiguration(HelloWorldIT.class),
                 LogLevel.INFO.name());
         option = composite(option, super.getLoggingOption());
         return option;
     }
 
     @Test
-    public void testhello-worldFeatureLoad() {
+    public void testhelloWorldFeatureLoad() {
         Assert.assertTrue(true);
     }
 }

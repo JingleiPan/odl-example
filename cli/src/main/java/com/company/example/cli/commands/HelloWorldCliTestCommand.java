@@ -10,7 +10,7 @@ package com.company.example.cli.commands;
 import org.apache.karaf.shell.commands.Command;
 import org.apache.karaf.shell.commands.Option;
 import org.apache.karaf.shell.console.AbstractAction;
-import com.company.example.cli.api.Hello-worldCliCommands;
+import com.company.example.cli.api.HelloWorldCliCommands;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,12 +19,12 @@ import org.slf4j.LoggerFactory;
  * Specify command details by updating the fields in the Command annotation below.
  */
 @Command(name = "test-command", scope = "add the scope of the command, usually project name", description = "add a description for the command")
-public class Hello-worldCliTestCommand extends AbstractAction {
+public class HelloWorldCliTestCommand extends AbstractAction {
 
-    private static final Logger LOG = LoggerFactory.getLogger(Hello-worldCliTestCommand.class);
-    protected final Hello-worldCliCommands service;
+    private static final Logger LOG = LoggerFactory.getLogger(HelloWorldCliTestCommand.class);
+    protected final HelloWorldCliCommands service;
 
-    public Hello-worldCliTestCommand(final Hello-worldCliCommands service) {
+    public HelloWorldCliTestCommand(final HelloWorldCliCommands service) {
         this.service = service;
     }
 

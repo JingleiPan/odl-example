@@ -10,14 +10,14 @@ package com.company.example.cli.impl;
 import org.opendaylight.controller.md.sal.binding.api.DataBroker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.company.example.cli.api.Hello-worldCliCommands;
+import com.company.example.cli.api.HelloWorldCliCommands;
 
-public class Hello-worldCliCommandsImpl implements Hello-worldCliCommands {
+public class HelloWorldCliCommandsImpl implements HelloWorldCliCommands {
 
-    private static final Logger LOG = LoggerFactory.getLogger(Hello-worldCliCommandsImpl.class);
+    private static final Logger LOG = LoggerFactory.getLogger(HelloWorldCliCommandsImpl.class);
     private final DataBroker dataBroker;
 
-    public Hello-worldCliCommandsImpl(final DataBroker db) {
+    public HelloWorldCliCommandsImpl(final DataBroker db) {
         this.dataBroker = db;
         LOG.info("Hello-worldCliCommandImpl initialized");
     }
